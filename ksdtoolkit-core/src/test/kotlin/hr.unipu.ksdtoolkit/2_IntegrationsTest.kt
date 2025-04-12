@@ -42,17 +42,16 @@ class `2_IntegrationsTest` {
         simulation.runAllPreparations()
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(-0.25))
+        assertThat(Stock.currentValue, `is`(-0.25))
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(-0.50))
+        assertThat(Stock.currentValue, `is`(-0.50))
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(-0.75))
+        assertThat(Stock.currentValue, `is`(-0.75))
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(-1.00))
-
+        assertThat(Stock.currentValue, `is`(-1.00))
     }
 
 
@@ -62,16 +61,16 @@ class `2_IntegrationsTest` {
         simulation.runAllPreparations()
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(closeTo(-0.25, 0.01)))
+        assertThat(Stock.currentValue, `is`(closeTo(-0.25, 0.01)))
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(closeTo(-0.50, 0.01)))
+        assertThat(Stock.currentValue, `is`(closeTo(-0.50, 0.01)))
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(closeTo(-0.75, 0.01)))
+        assertThat(Stock.currentValue, `is`(closeTo(-0.75, 0.01)))
 
         simulation.runOneTimeStep()
-        assertThat(Stock.currentValue as Double, `is`(closeTo(-1.00, 0.01)))
+        assertThat(Stock.currentValue, `is`(closeTo(-1.00, 0.01)))
     }
 
 

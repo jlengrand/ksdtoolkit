@@ -1,8 +1,8 @@
 rootProject.name = "ksdtoolkit"
 
 include("ksdtoolkit-core")
-include("ksdtoolkit-mobapp")
-include("ksdtoolkit-webapp")
+//include("ksdtoolkit-mobapp")
+//include("ksdtoolkit-webapp")
 
 
 pluginManagement {
@@ -37,7 +37,7 @@ pluginManagement {
                 useModule("org.openjfx.javafx-plugin:${requested.version}")
             }
             if (requested.id.id.startsWith("org.jetbrains.kotlin")) {
-                useVersion("${kotlinVersion}")
+                useVersion(kotlinVersion)
             }
         }
     }

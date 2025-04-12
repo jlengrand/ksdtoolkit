@@ -11,7 +11,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm")
 
     if (JavaVersion.current().isJava11Compatible) {
-        id("org.openjfx.javafxplugin") version "0.0.9"
+        id("org.openjfx.javafxplugin") version "0.1.0"
     }
 }
 
@@ -45,6 +45,7 @@ compileTestKotlin.kotlinOptions {
 }
 
 javafx {
+    version = "17.0.14"
     modules("javafx.controls", "javafx.fxml", "javafx.graphics", "javafx.swing")
 }
 
