@@ -5,3 +5,5 @@
 ksdtoolkit-core/build
 ksdtoolkit-core/output_chart.png
 ksdtoolkit-core/output_data.csv
+ksdtoolkit-mobapp/build
+ksdtoolkit-webapp/build
