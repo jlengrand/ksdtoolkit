@@ -11,7 +11,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.jetbrains.kotlin.jvm")
 
-    id("org.gretty") version "3.0.3"
+    id("org.gretty") version "3.1.0"
 
     id("com.devsoap.plugin.vaadin") version "2.0.0.beta2"
 }

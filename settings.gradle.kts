@@ -10,12 +10,11 @@ pluginManagement {
     repositories {
         google()
         gradlePluginPortal()
-        jcenter()
         mavenLocal()
     }
 
-    val kotlinVersion = "1.4.20"
-    val androidGradlePluginVersion = "4.0.2"
+    val kotlinVersion = "2.1.10"
+    val androidGradlePluginVersion = "8.9"
 
     plugins {
         id("org.jetbrains.kotlin.jvm") version kotlinVersion apply false

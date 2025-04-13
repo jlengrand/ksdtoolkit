@@ -48,7 +48,7 @@ class `5_SimulationOutputsTest` {
         simulation.outputs {
             csvExporter = CsvExporter("output_data.csv", ";")
             pngExporter = PngExporter("output_chart.png")
-//            winSimulator = WinSimulator()
+            winSimulator = WinSimulator()
 
             // !!! Mobile simulator test has to be run from Android Test, because Java modules
             // cannot depend on Android modules (reverse is ok).
