@@ -40,6 +40,6 @@ repositories {
     mavenCentral()
 }
 
-task("copyDependencies", Copy::class) {
-    from(configurations.default).into("$layout.buildDirectory/dependencies")
-}
+tasks.register("copyDependencies", Copy::class, fun Copy.() {
+    from(configurations.runtimeClasspath).into("$buildDir/dependencies")
+})
