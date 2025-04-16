@@ -39,3 +39,7 @@ javafx {
 repositories {
     mavenCentral()
 }
+
+task("copyDependencies", Copy::class) {
+    from(configurations.default).into("$layout.buildDirectory/dependencies")
+}
